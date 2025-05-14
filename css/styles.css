@@ -146,5 +146,26 @@ body {
     padding: 1rem;
     border-radius: 0.5rem;
   }
+    /* ========== MOBILE LAYOUT ========== */
+  @media (max-width: 600px) {
+  .container {
+    grid-template-areas:
+      "header"
+      "left"
+      "main"
+      "right"
+      "footer";
+    grid-template-columns: 1fr;
+  }
+
+  .columns {
+    flex-direction: column;
+  }
+
+  body {
+    padding: 1rem;
+  }
+}
+
 
   
